@@ -1,0 +1,49 @@
+{
+  "chainId": 1,
+  "contract": "AleoDynamicFeeHook",
+  "hook": "0x5478F0d6cBb8942808060FAb82b458D6A0551000",
+  "poolId": "0x85860823e596fd96c81c448f74f65b663acfb22c1710024f5a69665207c27c53",
+  "poolKey": {
+    "currency0": "0x33fbC08bD84E61E04e51eA0F32885AA77F7D5ECa",
+    "currency1": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "fee": 8388608,
+    "tickSpacing": 10,
+    "hooks": "0x5478F0d6cBb8942808060FAb82b458D6A0551000"
+  },
+  "constructorArguments": {
+    "manager": "0x000000000004444c5dc75cB358380D2e3dE08A90",
+    "initialOwner": "0x3117C2c79Cc777DC43Ad389f1145E24d9bE7Fab5",
+    "abiEncoded": "0x000000000000000000000000000000000004444c5dc75cb358380d2e3de08a900000000000000000000000003117c2c79cc777dc43ad389f1145e24d9be7fab5"
+  },
+  "initialLpFeePips": 500,
+  "permissions": {
+    "afterInitialize": true,
+    "mask": "0x1000"
+  },
+  "verification": {
+    "date": "2026-11-16",
+    "blockNumber": 26429380,
+    "ownerAtBlock": "0x3117c2c79cc777dc43ad389f1145e24d9be7fab5",
+    "selectedFeePipsAtBlock": 500,
+    "runtimeCodeKeccak256": "0x5f079f663bfaf6387c116c0e4585db8d0c4df0f2fb819f3a17e41b7a54b6afc7",
+    "sourceSha256": "6ffb2f914ae19bfcbd7a371effd16476138263357fbf02f8c97c92c85de8f1b5",
+    "exactRuntimeMatch": true,
+    "method": "Compiled runtime with each PoolManager immutable reference populated with constructor manager; full byte-for-byte comparison to eth_getCode at blockNumber.",
+    "compiler": "0.8.26+commit.8a97fa7a",
+    "evmVersion": "cancun",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "bytecodeHash": "none",
+    "etherscanSourceStatus": "Exact Match"
+  },
+  "source": "src/AleoDynamicFeeHook.sol",
+  "dependencies": {
+    "OpenZeppelin/uniswap-hooks": "b5f10574f943911635754dd76ed6ce95858b7d93",
+    "OpenZeppelin/openzeppelin-contracts": "fcbae5394ae8ad52d8e580a3477db99814b9d565",
+    "Uniswap/v4-core": "d153b048868a60c2403a3ef5b2301bb247884d46",
+    "foundry-rs/forge-std": "a6d71da563bbb8d6eef8fbec3a16c61c603d2764",
+    "transmissions11/solmate": "4b47a19038b798b4a33d9749d25e570443520647"
+  }
+}
